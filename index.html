@@ -5,51 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elena Fadeeva Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
  <header>
     <h1> Elena Fadeeva</h1>
     <nav>
         <ul>
-            <li>About</li>
-            <li>Featuring Works</li>
-            <li>Contacts</li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#featuring-works">Featuring Works</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
 
  </header>   
- <section>
-
-    <h2> About Me</h2>
+ <main>
+ <section id="about">
+    
+    <div class="title">
+        <h2> About Me</h2>
+     </div>
+     <div class="content">
+    <img src="./assets/images/image_6487327.JPG">
+    
      <p>Former Oilfield Engineer with MS in Chemical Engineering,
      self-taught in Fine Arts and with a huge passion in Web Developing. I'm artist and creator and Coding is both art and technology where we can create and see a final product of our labor.</p>
-    
-   
+        </div>
+
  </section>
-<section>
-    <article>
-        Accessibility project
-    </article>
 
-    <article>
-      Css snippets project
-    </article>
+<section class="container" id="featuring-works">
+    
+    <div class="title">
+        <h2>Featuring Works</h2>
+    </div>
 
-    <article>
-        personal art page
-    </article>
+   <div class="content">
+
+        <article>
+            <h2>Accessibility project</h2>
+            <img src="./assets/images/accessibility.png" alt="webpage with Developer Tools" class="float-center">
+            <p>Modifying code according to accessibility code. <a href="https://elenafwork.github.io/01-Accessibility/"> Learn more </a>   </p>
+        </article>
+
+        <article>
+            <h2>Css snippets project</h2>
+            <img src="./assets/images/mini-project.png" alt="webpage with css snippets"  class="float-center">
+            <p>Mini team project to explore advance css. <a></a>Learn more</p>
+        </article>
+
+        <article>
+            <h2>Personal Artist Webpage</h2>
+            <img src="./assets/images/coming-soon.jpeg" alt="coming soon gray background" class="float-center">
+            <p>Artist personal webpage.</p>
+        </article>
+    </div> 
 </section>
-<section> 
-    <h2> contacts</h2>
-    <nav>
-        <li>email</li>
-        <li>GitHub</li>
-        <li>LinkedIn</li>
-        <li>Instagram</li>
-    </nav>
+
+<section id="contacts"> 
+   
+    <div class="title">
+        <h2> Contacts</h2>
+    </div>
+   
+    <div class="content">
+        <nav>
+            <ul>
+            <li><a href="mailto:elenaf.work@gmail.com">Email</a></li>
+            <li><a href="https://github.com/elenafwork">GitHub</a></li>
+            <li> <a href=""  >LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/elenaf_art/">Instagram</a></li>
+            </ul>
+        </nav>
+   </div>
 </section>
 
-
+</main>
 </body>
 
 
