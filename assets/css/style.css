@@ -1,8 +1,8 @@
 
 
 body {
-    /*background-color: aliceblue;*/
-   background: linear-gradient(0deg,white,rgb(234, 158, 246),60% ,rgba(0, 0, 255, 0.557));
+    background-color: black;
+  
 }
 
 header {
@@ -10,7 +10,8 @@ header {
     justify-content: space-between;
      background: linear-gradient(45deg,rgb(234, 158, 246),rgba(0, 0, 255, 0.557));
     height: 100px;
-   /* width: 100vw;*/
+    width: 100vw;
+   
 }
 
 header h1 {
@@ -32,7 +33,7 @@ header nav {
     right: 20px;
     bottom: 10px;
     font-variant-caps: all-small-caps;
-    color:antiquewhite;
+    
     font-style: italic;
     font-size: 20px;
 
@@ -40,19 +41,24 @@ header nav {
 
 header nav ul {
     list-style-type: none;
+    
 }
 header nav li {
-       
+    
     display: inline-block;
     padding: 5px;
     margin-left: 5px;
     margin-right: 15px;
+    margin-bottom: 10px;
 
 }
 
-a{
+header a {
+    color:aliceblue;
     text-decoration: none;
 }
+
+
 
 main {
 display: flex;
@@ -62,7 +68,9 @@ flex-wrap: wrap;
 
 }
 section {
-  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   
   padding: 10px;
   margin-left: 10px;
@@ -97,7 +105,7 @@ div{
 
 .title h2 {
     font-size: 25px;
-    color: rgba(37, 35, 35, 0.933);
+    color: rgb(234, 158, 246);
     font-style: italic;
 }
 
@@ -105,9 +113,18 @@ div{
     display: flexbox;
     flex-direction: row;
 
-    width: 70%;
+    width: 74%;
     height: 100%;
-    border: navy  solid 3px;
+    padding: 10px;
+    border-left: navy  solid 3px;
+    border-bottom: navy  solid 3px;
+
+}
+
+.container{
+    background-color: rgba(0, 0, 255, 0.557, 0.5);
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -118,33 +135,75 @@ section a:hover {
   }
 
 #about img {
+    display: inline-block;
     max-width: 10vw;
     
     margin-left: 10px;
     margin-top: 10px;
  }
 
+#information {
+   
+    background-color: rgb(216, 231, 244);
+    margin: 10px;
+    padding: 10px;
+}   
+
 
 
 article{
-   background-color: rgb(216, 231, 244, 0.5);
-   width: 45%;
-   margin-bottom: 10px;
+   background-color: rgb(234, 158, 246, 0.5);
+   padding: 10px;
+   width: 390px;
+   margin: 10px;
 }
 
+/* Article img for coming soon */
 .float-center {
     float: center;
-    max-width: 25vw;
+    width: 350px;
+    height: 30vh;
     margin: 10px;
 }
- article h2 {
+/*project title and description*/
+.project-title {
+    position:relative;
+    bottom:57px;
+    left: -10px;
+    background-color:rgb(216, 231, 244) ;
+    padding: 5px;
+    z-index: 10;
+}
+
+/*Article header*/
+article h2 {
     font-size: 20px;
     color: rgba(37, 35, 35, 0.933);
     font-style: italic;
-    margin-left: 10px;
-    margin-top: 10px;
- }
+    margin: 10px;
+    }
 
+  /*article img/link*/  
+ .project01 a{
+  background-image: url("../images/accessibility.png");
+  position: relative;
+  z-index: 0;
+    display:block;
+    height: 30vh;
+    width: 350px;
+    margin: 10px;
+}
+
+.project02 a{
+    background-image: url("../images/mini-project.png");
+      display:block;
+      height: 30vh;
+      width: 350px;
+      margin: 10px;
+  }
+
+  
+  
  article p {
     font-size: 15px;
     margin-left: 10px;
@@ -152,12 +211,12 @@ article{
  }
 
 
- article :hover {
-    transform: scale(150%);
+ article:hover {
+    transform: scale(110%);
     transform-origin: initial;
     align-items: center;
-    box-shadow: 5px 5px 15px -20px rgba(0, 0, 255, 0.557),
-    5px 5px 60px rgba(0, 0, 255, 0.557);
+   /* box-shadow: 5px 5px 15px  rgba(0, 0, 255, 0.557);*/
+    background-color: rgb(234, 158, 2464, 1.0);
  }
 
 #contacts nav {
@@ -170,12 +229,15 @@ article{
 }
 #contacts nav ul li {
  display: inline-block;
- padding: 5px;
+ padding: 10px;
 margin-left: 20px;
 }
  
 #contacts nav ul li a{
-    color: rgba(0, 0, 255, 0.557);
+    color: rgba(234, 158, 246);
+    text-decoration: none;
+    font-size: larger;
+    font-style: oblique;
 }
 
 #contacts nav ul li a:hover {
@@ -185,28 +247,28 @@ margin-left: 20px;
 
 
 
- @media screen and (max-width: 768px;) {
-    header nav {
-        
-        bottom: 5px;
-        font-variant-caps: all-small-caps;
-        color:antiquewhite;
-        font-style: italic;
-        font-size: 20px;
-    
+@media screen and (max-width: 768px;) {
+section {
+        display: flex;
+        flex-direction: column-reverse;
     }
-    
-    header nav ul {
-        list-style-type: none;
-    }
-    header nav li {
-           
+.title {
         display: block;
-        padding: 5px;
-        margin-left: 5px;
-        margin-right: 15px;
+        flex: 5 0 ;
+        width: 350px;
+        height: 50px;
+        text-align: right;
+       
+        margin-right: 10px;
+
+     }
+ .content {
         
-    
-    } 
- }
-    
+        width: 90vw;
+        height: 100%;
+
+    }
+
+
+
+} 
