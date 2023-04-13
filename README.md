@@ -30,7 +30,7 @@ The webpage's look on smart phone screen:
 
 
 <p align="left">
-  <img src="assets/images/screenshot-mobile.png" width="350" title="hover text">
+  <img src="assets/images/Screenshot-mobile.png" width="350" title="hover text">
 
 
 
@@ -40,6 +40,6 @@ N/A
 
 
 ## License
-
+ 
 Please , refer to the repo license.
 
