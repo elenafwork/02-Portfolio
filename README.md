@@ -36,7 +36,7 @@ The webpage's look on smart phone screen:
 
 ## Credits
 
-N/A
+
 
 
 ## License
