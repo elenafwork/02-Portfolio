@@ -1,24 +1,45 @@
 # Elena Fadeeva Profile Webpage.
-Description
+
+## Description
+
 This project was created to make the personal profile page for Web Developer student :
+- The page presents the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+- After a click one of the links in the navigation  the UI scrolls to the corresponding section
+- After a  click on the link to the section about their work the UI scrolls to a section with titled images of the developer's applications
+- When a cursor is positioned at the work, it is enlarged
+- After a click on the images of the applications the viewer is taken to that deployed application
+- The webpage is presented with responsive layout that adapts to a different viewpoints
 
-describing the webpage in the title
-applying HTML Semantic
-understandable structure of HTML elements
-they follow semantic order
-accessible alt attributes
-comments in the both HTML and CSS files
-Installation
-N/A
 
-Usage
+## Usage
+
+After clicking the link below you will be able to see deployed application.
+
 https://elenafwork.github.io/02-Portfolio/
+ 
 
-To see the code, you can review the comments in each section. Open the Chrome DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). A HTML panel should open either below or to the side of the webpage in the browser. There you will see the code with all semantic elements, alt attributes and comments. For the each element of the code the relevant CSS part with the comments will be available in the css part of DevTools.
 
-Credits
+The webpage looks like this on the computer screen: 
+
+
+<p align="left">
+  <img src="assets/images/webpage.png" width="700" title="hover text">
+
+
+The webpage's look on smart phone screen: 
+
+
+<p align="left">
+  <img src="assets/images/screenshot-mobile.png" width="350" title="hover text">
+
+
+
+## Credits
+
 N/A
 
-License
-N/A
+
+## License
+
+Please , refer to the repo license.
 
